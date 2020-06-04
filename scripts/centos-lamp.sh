@@ -18,9 +18,9 @@ yum install -y php php-cli php-common php-devel php-mysql
 
 # mysql
 yum install -y mysql mysql-devel mariadb-server
-chkconfig --add mysqld
-chkconfig mysqld on
-service mysqld start
+chkconfig --add mysql
+chkconfig mysql on
+service mysql start
 mysql -u root -e "SHOW DATABASES";
 
 # download starter content
