@@ -19,7 +19,7 @@ yum install -y php php-cli php-common php-devel php-mysql
 # mysql
 yum install -y mysql mysql-devel mariadb-server
 chkconfig --add mysql
-chkconfig mysql on
+chkconfig --level 345 mysql on
 service mysql start
 mysql -u root -e "SHOW DATABASES";
 
